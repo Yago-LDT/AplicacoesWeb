@@ -1,0 +1,15 @@
+tr.clara{
+    background-color: #f03a31;
+}
+
+tr.escura{
+    background-color: #f8f6f5;
+
+}
+
+#table{
+    position: relative;
+    margin-left: 40%;
+    margin-top: 10%;
+    border-color: olivedrab;
+}
