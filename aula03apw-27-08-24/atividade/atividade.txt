@@ -1,0 +1,5 @@
+Faça um programa em PHP que receba o nome e a idade de várias pessoas e mostre como resultado: 
+
+A. O nome e a idade da pessoa mais velha digitada.
+B. A soma de todas as idades digitadas.
+C. liste todas as pessoas e idades.
