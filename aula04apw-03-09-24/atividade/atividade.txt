@@ -1,0 +1,4 @@
+Faça um programa que receba como dado de entrada três números em um mesmo formulário e mostre como resultado
+qual dos três números é o maior.
+
+Utilizar função, include e mostrar o resultado na mesma página.
