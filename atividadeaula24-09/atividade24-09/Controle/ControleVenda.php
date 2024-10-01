@@ -26,8 +26,36 @@ switch ($acao){
         }
 
         break;
-        default;
-        break;
+
+        case 'alterarVenda':
+            //codigo aqui   
+             $venda = $classVendaDAO->alterarVenda($novaVenda);
+             if($venda == 1){
+                 header('Location:../index.php?&MSG= Cadastro atualizado com sucesso!');
+             } else {
+                 header('Location:../index.php?&MSG= Não foi possivel realizar a atualização!');
+             }
+
+             break;
+
+             case "excluirVenda":
+                if (isset($_GET['idex'])) {
+                    $id = $_GET['idex'];
+                    $classVendaDAO = new ClassVendaDAO();
+                    $us = $classVendaDAO->excluirVendas($id);
+                    if ($us == TRUE) {
+                        header('Location:../index.php?PAGINA=listarVendas&MSG= Venda foi excluida com sucesso!');
+                    } else {
+                        header('Location:../index.php?PAGINA=listarVendas&MSG=Não foi possivel realizar a exclusão da!');
+                    }
+                }
+        
+                break;
+            default :
+                break;	
+
 }
+
+
 
 
