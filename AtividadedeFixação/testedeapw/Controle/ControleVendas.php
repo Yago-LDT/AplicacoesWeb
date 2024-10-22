@@ -9,8 +9,8 @@ $acao = $_GET['ACAO'];
 
 $novaVenda = new ClassVenda();
 $novaVenda->setIditensvendas($iditensvendas);
-$novaVenda->setProdutoidproduto($produtoidproduto);
-$novaVenda->setQuantitensvendas($quantitensvendas);
+$novaVenda->setProdutoidproduto($produto);
+$novaVenda->setQuantitensvendas($quantidade);
 
 $classVendasDAO = new ClassVendasDAO();
 switch ($acao) {
